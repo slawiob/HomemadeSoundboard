@@ -4,19 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Editor">
 
-    <LinearLayout
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/mainGrid"
+        app:columnCount="5"
+        app:rowCount="5"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <Button
-            android:id="@+id/startEditor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onClickStartEditor"
-            android:text="@string/b_startEditor" />
-    </LinearLayout>
-
+        android:layout_height="match_parent">
+    </android.support.v7.widget.GridLayout>
 </android.support.constraint.ConstraintLayout>
